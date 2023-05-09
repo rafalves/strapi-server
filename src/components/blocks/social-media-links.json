@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blocks_social_media_links",
+  "info": {
+    "displayName": "social_media_links"
+  },
+  "options": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    }
+  }
+}
