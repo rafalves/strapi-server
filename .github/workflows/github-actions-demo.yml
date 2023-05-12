@@ -36,17 +36,27 @@ jobs:
         REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
         REMOTE_USER: ${{ secrets.REMOTE_USER }}
         TARGET: "/home/rafael/teste"
-        EXCLUDE: "/.cache/, .editorconfig, .env.example, .eslintignore, .eslintrc, /.git/, /.github/, .gitignore, .strapi-updater.json, README.md, /build/, /config/, /database/, favicon.png, local_ssh_script_before.sh, /node_modules/, package.json, package-lock.json, /public/, strapiloader.js, yarn.lock"
+        EXCLUDE: "/.cache/, .editorconfig, .env.example, .eslintignore, .eslintrc, /.git/, /.github/, .gitignore, .strapi-updater.json, README.md, /build/, /config/, /database/, favicon.png, local_ssh_script-before.sh, /node_modules/, package.json, package-lock.json, /public/, strapiloader.js, yarn.lock"
         SCRIPT_BEFORE: |
           echo "SCRIPT_BEFORE"
           echo "whoami"
           whoami
           echo "ls -la"
           ls -al
+          echo "🚀🚀🚀 STOP PM2 🚀🚀🚀"
+          echo "pm2 kill"
+          pm2 kill
+          echo "pm2 status"
+          pm2 status"
         SCRIPT_AFTER: |
           echo "SCRIPT_AFTER"
           echo "whoami"
           whoami
           echo "ls -la"
           ls -al
+          echo "🚀🚀🚀 Runnin PM2 - Strapi to the moon 🚀🚀🚀"
+          echo "NODE_ENV=production pm2 start /home/rafael/strapi-server/strapiloader.js -i max --env production"
+          NODE_ENV=production pm2 start /home/rafael/strapi-server/strapiloader.js -i max --env production
+          echo "pm2 status"
+          pm2 status"
           echo $RSYNC_STDOUT
