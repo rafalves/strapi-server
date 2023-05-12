@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "single_pages",
+  "info": {
+    "singularName": "single-page",
+    "pluralName": "single-pages",
+    "displayName": "Single page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "page": {
+      "type": "string"
+    }
+  }
+}

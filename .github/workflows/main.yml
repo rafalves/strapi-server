@@ -46,7 +46,6 @@ jobs:
           pm2 status
         SCRIPT_AFTER: |
           echo "SCRIPT_AFTER"
-          echo "whoami"
           echo "🚀🚀🚀 CD to Folder 🚀🚀🚀"
           echo "cd strapi-server/"
           cd strapi-server/
