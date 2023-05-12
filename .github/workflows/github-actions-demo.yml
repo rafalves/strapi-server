@@ -54,9 +54,12 @@ jobs:
           whoami
           echo "ls -la"
           ls -al
+          echo "🚀🚀🚀 CD to Folder 🚀🚀🚀"
+          echo "cd strapi-server/"
+          cd strapi-server/
           echo "🚀🚀🚀 Runnin PM2 - Strapi to the moon 🚀🚀🚀"
-          echo "NODE_ENV=production pm2 start /home/rafael/strapi-server/strapiloader.js -i max --env production"
-          NODE_ENV=production pm2 start /home/rafael/strapi-server/strapiloader.js -i max --env production
+          echo "NODE_ENV=production pm2 start strapiloader.js -i max --env production"
+          NODE_ENV=production pm2 start strapiloader.js -i max --env production
           echo "pm2 status"
           pm2 status
           echo $RSYNC_STDOUT
