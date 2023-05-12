@@ -47,7 +47,7 @@ jobs:
           echo "pm2 kill"
           pm2 kill
           echo "pm2 status"
-          pm2 status"
+          pm2 status
         SCRIPT_AFTER: |
           echo "SCRIPT_AFTER"
           echo "whoami"
