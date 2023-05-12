@@ -58,5 +58,5 @@ jobs:
           echo "NODE_ENV=production pm2 start /home/rafael/strapi-server/strapiloader.js -i max --env production"
           NODE_ENV=production pm2 start /home/rafael/strapi-server/strapiloader.js -i max --env production
           echo "pm2 status"
-          pm2 status"
+          pm2 status
           echo $RSYNC_STDOUT
