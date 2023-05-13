@@ -12,10 +12,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
-      "type": "string",
-      "unique": true,
-      "required": true
+    "name": {
+      "type": "string"
     },
     "restaurants": {
       "type": "relation",

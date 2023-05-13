@@ -12,19 +12,42 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
       "unique": true,
       "required": true
     },
-    "Description": {
+    "description": {
       "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "openingHours": {
+      "displayName": "Opening Hours",
+      "type": "component",
+      "repeatable": false,
+      "component": "restaurant-info.opening-hours"
     },
     "categories": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::category.category",
       "mappedBy": "restaurants"
+    },
+    "avgPrice": {
+      "type": "decimal"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review",
+      "mappedBy": "restaurant"
     }
   }
 }
