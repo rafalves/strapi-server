@@ -1,7 +1,8 @@
 {
   "collectionName": "components_blocks_row_tables",
   "info": {
-    "displayName": "RowTable"
+    "displayName": "RowTable",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -9,14 +10,10 @@
       "type": "string"
     },
     "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
     },
     "rating": {
       "type": "integer",
@@ -28,6 +25,14 @@
       "type": "component",
       "repeatable": true,
       "component": "small-blocks.pros"
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "ShopButton": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.shop-button"
     }
   }
 }
