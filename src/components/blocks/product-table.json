@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_product_tables",
+  "info": {
+    "displayName": "ProductTable",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tableRows": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.row-table"
+    }
+  }
+}

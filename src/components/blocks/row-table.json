@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_blocks_row_tables",
+  "info": {
+    "displayName": "RowTable"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "rating": {
+      "type": "integer",
+      "default": 5,
+      "max": 5,
+      "min": 1
+    },
+    "Pros": {
+      "type": "component",
+      "repeatable": true,
+      "component": "small-blocks.pros"
+    }
+  }
+}

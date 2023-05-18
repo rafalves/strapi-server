@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_blocks_product_descriptions",
+  "info": {
+    "displayName": "ProductDescription",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "alt": {
+      "type": "string"
+    },
+    "ShopButton": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.shop-button"
+    }
+  }
+}

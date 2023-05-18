@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_shop_buttons",
+  "info": {
+    "displayName": "shopButton"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

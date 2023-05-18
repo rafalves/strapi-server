@@ -4,7 +4,7 @@
   "info": {
     "singularName": "author",
     "pluralName": "authors",
-    "displayName": "author",
+    "displayName": "Author",
     "description": ""
   },
   "options": {
@@ -28,10 +28,11 @@
         "images"
       ]
     },
-    "social_links": {
-      "type": "component",
-      "repeatable": true,
-      "component": "blocks.social-media-links"
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article",
+      "mappedBy": "author"
     }
   }
 }

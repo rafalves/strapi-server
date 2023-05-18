@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_blocks_text_connections",
+  "info": {
+    "displayName": "TextConnection"
+  },
+  "options": {},
+  "attributes": {
+    "textConnection": {
+      "type": "string"
+    }
+  }
+}
