@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_blocks_row_tables",
+  "info": {
+    "displayName": "RowTable",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "rating": {
+      "type": "integer",
+      "default": 5,
+      "max": 5,
+      "min": 1
+    },
+    "Pros": {
+      "type": "component",
+      "repeatable": true,
+      "component": "small-blocks.pros"
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "ShopButton": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.shop-button"
+    }
+  }
+}
