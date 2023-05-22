@@ -35,7 +35,7 @@ jobs:
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: "/home/rafael/strapi-server/"
           # EXCLUDE: "/.cache/, .editorconfig, .env.example, .eslintignore, .eslintrc, /.git/, /.github/, .gitignore, .strapi-updater.json, README.md, /build/, /config/, /database/, favicon.png, local_ssh_script-before.sh, /node_modules/, package.json, package-lock.json, /public/, strapiloader.js, yarn.lock"
-          EXCLUDE: ""
+          #EXCLUDE: ""
           SCRIPT_BEFORE: |
             echo "SCRIPT_BEFORE"
             echo "🚀🚀🚀 STOP PM2 🚀🚀🚀"
