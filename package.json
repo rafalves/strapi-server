@@ -14,7 +14,7 @@
     "@strapi/plugin-seo": "^1.8.0",
     "@strapi/plugin-users-permissions": "4.10.2",
     "@strapi/strapi": "4.10.4",
-    "pg": "8.8.0",
+    "pg": "^8.11.0",
     "strapi-plugin-populate-deep": "^2.0.0"
   },
   "author": {
