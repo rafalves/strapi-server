@@ -32,7 +32,7 @@
     "ShopButton": {
       "type": "component",
       "repeatable": true,
-      "component": "blocks.shop-button"
+      "component": "slices.shop-button"
     }
   }
 }

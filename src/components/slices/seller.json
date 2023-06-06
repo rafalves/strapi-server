@@ -1,14 +1,14 @@
 {
-  "collectionName": "components_blocks_shop_buttons",
+  "collectionName": "components_slices_sellers",
   "info": {
-    "displayName": "shopButton"
+    "displayName": "Seller"
   },
   "options": {},
   "attributes": {
-    "label": {
+    "seller_name": {
       "type": "string"
     },
-    "link": {
+    "prod_link": {
       "type": "string"
     }
   }

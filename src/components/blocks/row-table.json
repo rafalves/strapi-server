@@ -13,7 +13,12 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images", "files", "videos", "audios"]
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     },
     "rating": {
       "type": "integer",
@@ -21,18 +26,13 @@
       "max": 5,
       "min": 1
     },
-    "Pros": {
-      "type": "component",
-      "repeatable": true,
-      "component": "small-blocks.pros"
-    },
     "imageUrl": {
       "type": "string"
     },
     "ShopButton": {
       "type": "component",
       "repeatable": true,
-      "component": "blocks.shop-button"
+      "component": "slices.shop-button"
     }
   }
 }

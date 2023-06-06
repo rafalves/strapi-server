@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_slices_cons",
+  "info": {
+    "displayName": "Cons"
+  },
+  "options": {},
+  "attributes": {
+    "cons": {
+      "type": "string"
+    }
+  }
+}

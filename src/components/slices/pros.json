@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_slices_pros",
+  "info": {
+    "displayName": "pros"
+  },
+  "options": {},
+  "attributes": {
+    "pros": {
+      "type": "string"
+    }
+  }
+}
