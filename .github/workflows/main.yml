@@ -39,8 +39,8 @@ jobs:
           SCRIPT_BEFORE: |
             echo "SCRIPT_BEFORE"
             echo "🚀🚀🚀 STOP PM2 🚀🚀🚀"
-            echo "pm2 kill"
-            pm2 kill
+            echo "pm2 delete strapiloader"
+            pm2 delete strapiloader
             echo "pm2 status"
             pm2 status
           SCRIPT_AFTER: |
