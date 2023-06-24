@@ -76,6 +76,10 @@
       "relation": "manyToMany",
       "target": "api::product.product",
       "mappedBy": "articles"
+    },
+    "minsToRead": {
+      "default": 6,
+      "type": "integer"
     }
   }
 }
