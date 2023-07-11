@@ -31,8 +31,7 @@
     "articles": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::article.article",
-      "mappedBy": "author"
+      "target": "api::article.article"
     }
   }
 }
