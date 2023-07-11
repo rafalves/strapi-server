@@ -74,6 +74,11 @@
     "minsToRead": {
       "default": 6,
       "type": "integer"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::author.author"
     }
   }
 }

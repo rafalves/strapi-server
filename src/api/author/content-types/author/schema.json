@@ -27,11 +27,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "articles": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::article.article"
     }
   }
 }
