@@ -1,7 +1,7 @@
 {
   "collectionName": "components_blocks_row_tables",
   "info": {
-    "displayName": "RowTable",
+    "displayName": "ProductRow",
     "description": ""
   },
   "options": {},
@@ -33,6 +33,9 @@
       "type": "component",
       "repeatable": true,
       "component": "slices.shop-button"
+    },
+    "description": {
+      "type": "string"
     }
   }
 }

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_adsense_ad_blocks",
+  "info": {
+    "displayName": "adBlock"
+  },
+  "options": {},
+  "attributes": {
+    "script": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    }
+  }
+}

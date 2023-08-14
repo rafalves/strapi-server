@@ -47,12 +47,6 @@
       "repeatable": true,
       "component": "slices.seller"
     },
-    "articles": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::article.article",
-      "inversedBy": "products"
-    },
     "shopButton": {
       "type": "component",
       "repeatable": true,
@@ -75,6 +69,12 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::product-category.product-category",
+      "inversedBy": "products"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
       "inversedBy": "products"
     }
   }

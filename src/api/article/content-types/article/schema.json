@@ -18,38 +18,27 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "title"
+      "targetField": "title",
+      "required": true
     },
-    "meta_description": {
-      "type": "text"
-    },
-    "image_cover": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "lead": {
+      "type": "string"
     },
     "keywords": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::keyword.keyword"
     },
-    "content": {
-      "type": "richtext"
-    },
     "components": {
       "type": "dynamiczone",
       "components": [
         "blocks.content-conclusion",
         "blocks.product-description",
-        "blocks.text-connection",
         "shared.seo",
-        "blocks.product-table"
+        "blocks.product-table",
+        "blocks.row-table",
+        "blocks.content",
+        "adsense.ad-block"
       ]
     },
     "category": {
@@ -57,19 +46,6 @@
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "articles"
-    },
-    "content_ckeditor": {
-      "type": "customField",
-      "options": {
-        "preset": "toolbar"
-      },
-      "customField": "plugin::ckeditor5.CKEditor"
-    },
-    "products": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::product.product",
-      "mappedBy": "articles"
     },
     "minsToRead": {
       "default": 6,
@@ -79,6 +55,14 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::author.author"
+    },
+    "cover_href": {
+      "type": "string",
+      "required": true
+    },
+    "articleUpdated": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
