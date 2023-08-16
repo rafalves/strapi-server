@@ -11,6 +11,12 @@
     },
     "link": {
       "type": "string"
+    },
+    "logoUrl": {
+      "type": "string"
+    },
+    "seller": {
+      "type": "string"
     }
   }
 }

@@ -6,6 +6,9 @@
   },
   "options": {},
   "attributes": {
+    "order": {
+      "type": "integer"
+    },
     "tableRows": {
       "type": "component",
       "repeatable": true,

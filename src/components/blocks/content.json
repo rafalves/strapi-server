@@ -8,6 +8,9 @@
   "attributes": {
     "content": {
       "type": "richtext"
+    },
+    "order": {
+      "type": "integer"
     }
   }
 }

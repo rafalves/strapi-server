@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_blocks_next_articles",
+  "info": {
+    "displayName": "NextArticle"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
+    }
+  }
+}

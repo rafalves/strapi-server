@@ -1,7 +1,8 @@
 {
   "collectionName": "components_shared_seos",
   "info": {
-    "displayName": "seo"
+    "displayName": "seo",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -42,6 +43,14 @@
     },
     "canonicalURL": {
       "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "metaSocial": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.meta-social"
     }
   }
 }

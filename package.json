@@ -16,6 +16,7 @@
     "@strapi/plugin-users-permissions": "4.11.4",
     "@strapi/strapi": "4.11.4",
     "pg": "^8.11.0",
+    "strapi-plugin-oembed": "^1.1.0",
     "strapi-plugin-populate-deep": "^2.0.0"
   },
   "author": {

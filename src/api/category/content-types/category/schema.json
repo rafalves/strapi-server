@@ -15,8 +15,7 @@
     "articles": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::article.article",
-      "mappedBy": "category"
+      "target": "api::article.article"
     },
     "products": {
       "type": "relation",
@@ -43,6 +42,12 @@
     "hierarchy": {
       "type": "string",
       "required": true
+    },
+    "article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article",
+      "mappedBy": "category"
     }
   }
 }

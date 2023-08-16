@@ -24,37 +24,26 @@
     "lead": {
       "type": "string"
     },
-    "keywords": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::keyword.keyword"
-    },
     "components": {
       "type": "dynamiczone",
       "components": [
-        "blocks.content-conclusion",
-        "blocks.product-description",
         "shared.seo",
         "blocks.product-table",
         "blocks.row-table",
         "blocks.content",
-        "adsense.ad-block"
+        "adsense.ad-block",
+        "blocks.oembed"
       ]
-    },
-    "category": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::category.category",
-      "inversedBy": "articles"
     },
     "minsToRead": {
       "default": 6,
       "type": "integer"
     },
-    "author": {
+    "authors": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::author.author"
+      "relation": "oneToMany",
+      "target": "api::author.author",
+      "mappedBy": "article"
     },
     "cover_href": {
       "type": "string",
@@ -63,6 +52,15 @@
     "articleUpdated": {
       "type": "boolean",
       "default": false
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category",
+      "inversedBy": "article"
+    },
+    "keywords": {
+      "type": "text"
     }
   }
 }

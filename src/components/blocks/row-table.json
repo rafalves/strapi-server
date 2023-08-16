@@ -1,11 +1,14 @@
 {
   "collectionName": "components_blocks_row_tables",
   "info": {
-    "displayName": "ProductRow",
+    "displayName": "productRow",
     "description": ""
   },
   "options": {},
   "attributes": {
+    "order": {
+      "type": "integer"
+    },
     "title": {
       "type": "string"
     },
@@ -21,7 +24,7 @@
       ]
     },
     "rating": {
-      "type": "integer",
+      "type": "decimal",
       "default": 5,
       "max": 5,
       "min": 1
@@ -35,6 +38,19 @@
       "component": "slices.shop-button"
     },
     "description": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "oEmbed": {
+      "type": "customField",
+      "customField": "plugin::oembed.oembed"
+    },
+    "pros": {
+      "type": "string"
+    },
+    "cons": {
       "type": "string"
     }
   }

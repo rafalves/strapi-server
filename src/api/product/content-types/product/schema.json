@@ -32,21 +32,6 @@
       "max": 5,
       "min": 1
     },
-    "pros": {
-      "type": "component",
-      "repeatable": true,
-      "component": "slices.pros"
-    },
-    "cons": {
-      "type": "component",
-      "repeatable": true,
-      "component": "slices.cons"
-    },
-    "seller": {
-      "type": "component",
-      "repeatable": true,
-      "component": "slices.seller"
-    },
     "shopButton": {
       "type": "component",
       "repeatable": true,
@@ -64,12 +49,6 @@
         "preset": "toolbar"
       },
       "customField": "plugin::ckeditor5.CKEditor"
-    },
-    "product_categories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::product-category.product-category",
-      "inversedBy": "products"
     },
     "category": {
       "type": "relation",

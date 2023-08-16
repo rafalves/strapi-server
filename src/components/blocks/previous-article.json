@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_blocks_previous_articles",
+  "info": {
+    "displayName": "PreviousArticle"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
+    }
+  }
+}

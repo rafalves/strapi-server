@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_blocks_oembeds",
+  "info": {
+    "displayName": "Oembeds",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "order": {
+      "type": "integer"
+    },
+    "oEmbed": {
+      "type": "customField",
+      "customField": "plugin::oembed.oembed"
+    }
+  }
+}
