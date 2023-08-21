@@ -32,7 +32,12 @@
         "blocks.row-table",
         "blocks.content",
         "adsense.ad-block",
-        "blocks.oembed"
+        "blocks.oembed",
+        "blocks.product-detais",
+        "blocks.content-ck-editor",
+        "blocks.next-article",
+        "blocks.previous-article",
+        "blocks.related-articles"
       ]
     },
     "minsToRead": {
@@ -61,6 +66,17 @@
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "articles"
+    },
+    "imgBanner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

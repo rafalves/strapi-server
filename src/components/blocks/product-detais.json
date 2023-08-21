@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_blocks_product_detais",
+  "info": {
+    "displayName": "ProductDetais"
+  },
+  "options": {},
+  "attributes": {
+    "order": {
+      "type": "integer"
+    }
+  }
+}

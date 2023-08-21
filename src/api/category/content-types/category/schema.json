@@ -18,12 +18,6 @@
       "target": "api::article.article",
       "mappedBy": "category"
     },
-    "products": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::product.product",
-      "mappedBy": "category"
-    },
     "parent": {
       "type": "relation",
       "relation": "manyToOne",

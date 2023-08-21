@@ -11,10 +11,10 @@
   },
   "dependencies": {
     "@_sh/strapi-plugin-ckeditor": "^2.0.4",
-    "@strapi/plugin-i18n": "4.11.4",
+    "@strapi/plugin-i18n": "4.12.5",
     "@strapi/plugin-seo": "^1.9.1",
-    "@strapi/plugin-users-permissions": "4.11.4",
-    "@strapi/strapi": "4.11.4",
+    "@strapi/plugin-users-permissions": "4.12.5",
+    "@strapi/strapi": "4.12.5",
     "pg": "^8.11.0",
     "strapi-plugin-oembed": "^1.1.0",
     "strapi-plugin-populate-deep": "^2.0.0"
@@ -23,7 +23,8 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "0ec1c9bf-fe85-4f79-9d86-45a9c1ad4452"
+    "uuid": "0ec1c9bf-fe85-4f79-9d86-45a9c1ad4452",
+    "telemetryDisabled": true
   },
   "engines": {
     "node": ">=14.19.1 <=18.x.x",
