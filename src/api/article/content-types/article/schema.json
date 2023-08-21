@@ -50,10 +50,6 @@
       "target": "api::author.author",
       "mappedBy": "article"
     },
-    "cover_href": {
-      "type": "string",
-      "required": true
-    },
     "articleUpdated": {
       "type": "boolean",
       "default": false
