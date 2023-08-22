@@ -19,23 +19,22 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install npm dependencies
-        run: npm install
+      #- name: Install npm dependencies
+      #  run: npm install
 
-      - name: Run build task
-        run: npm run build
+      #- name: Run build task
+      #  run: npm run build
 
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@main
-        env:
+        with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-rlgoDzvc -i" # --delete " //delete all files that aren't in the github source (.env will be deleted if this is -- delete is enabled)
           SOURCE: "/"
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: "/home/rafael/strapi-server/"
-          # EXCLUDE: "/.cache/, .editorconfig, .env.example, .eslintignore, .eslintrc, /.git/, /.github/, .gitignore, .strapi-updater.json, README.md, /build/, /config/, /database/, favicon.png, local_ssh_script-before.sh, /node_modules/, package.json, package-lock.json, /public/, strapiloader.js, yarn.lock"
-          # EXCLUDE: ""
+          EXCLUDE: ".env.example, .env, /node_modules/, /build"
           SCRIPT_BEFORE: |
             echo "SCRIPT_BEFORE"
             echo "🚀🚀🚀 STOP PM2 🚀🚀🚀"
@@ -44,6 +43,10 @@ jobs:
             echo "pm2 status"
             pm2 status
           SCRIPT_AFTER: |
+            echo"npm run install"
+            npm run install
+            echo "npm run build"
+            npm run build
             echo "SCRIPT_AFTER"
             echo "🚀🚀🚀 CD to Folder 🚀🚀🚀"
             echo "cd strapi-server/"
