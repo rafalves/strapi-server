@@ -16,12 +16,7 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "allowedTypes": ["images", "files", "videos", "audios"]
     },
     "rating": {
       "type": "decimal",
@@ -46,6 +41,16 @@
     "oEmbed": {
       "type": "customField",
       "customField": "plugin::oembed.oembed"
+    },
+    "pros": {
+      "type": "component",
+      "repeatable": true,
+      "component": "slices.pros"
+    },
+    "cons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "slices.cons"
     }
   }
 }
