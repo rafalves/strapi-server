@@ -34,7 +34,7 @@ jobs:
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: "/home/rafael/strapi-server/"
-          EXCLUDE: ".env.example, .env, /node_modules/, /build"
+          #EXCLUDE: ".env.example, .env, /node_modules/, /build"
           SCRIPT_BEFORE: |
             echo "SCRIPT_BEFORE"
             echo "🚀🚀🚀 STOP PM2 🚀🚀🚀"
