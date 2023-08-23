@@ -29,7 +29,7 @@ jobs:
         uses: easingthemes/ssh-deploy@main
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          ARGS: "-rlgoDzvc -i" # --delete " //delete all files that aren't in the github source (.env will be deleted if this is -- delete is enabled)
+          ARGS: "-rlgoDzvc  --delete " # delete all files that aren't in the github source (.env will be deleted if this is -- delete is enabled)
           SOURCE: "/"
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
@@ -43,17 +43,20 @@ jobs:
             echo "pm2 status"
             pm2 status
           SCRIPT_AFTER: |
+            echo "🚀🚀🚀 Starting SCRIPT AFTER 🚀🚀🚀"
+            echo "cd strapi-server/"
+            cd strapi-server/
+            echo "cp ../strapi-env/.env ."
+            cp ../strapi-env/.env .
             echo"npm run install"
             npm run install
             echo "npm run build"
             npm run build
             echo "SCRIPT_AFTER"
-            echo "🚀🚀🚀 CD to Folder 🚀🚀🚀"
-            echo "cd strapi-server/"
-            cd strapi-server/
             echo "🚀🚀🚀 Runnin PM2 - Strapi to the moon 🚀🚀🚀"
             echo "NODE_ENV=production pm2 start strapiloader.js -i max --env production"
             NODE_ENV=production pm2 start strapiloader.js -i max --env production
             echo "pm2 status"
             pm2 status
             echo $RSYNC_STDOUT
+            echo "🚀🚀🚀 END SCRIPT 🚀🚀🚀"
