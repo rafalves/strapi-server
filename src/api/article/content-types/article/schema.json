@@ -44,12 +44,6 @@
       "default": 6,
       "type": "integer"
     },
-    "authors": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::author.author",
-      "mappedBy": "article"
-    },
     "articleUpdated": {
       "type": "boolean",
       "default": false
@@ -73,6 +67,12 @@
         "videos",
         "audios"
       ]
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::author.author",
+      "inversedBy": "articles"
     }
   }
 }
