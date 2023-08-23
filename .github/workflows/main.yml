@@ -48,7 +48,7 @@ jobs:
             cd strapi-server/
             echo "cp ../strapi-env/.env ."
             cp ../strapi-env/.env .
-            echo"npm run install"
+            echo"npm install"
             npm run install
             echo "npm run build"
             npm run build
