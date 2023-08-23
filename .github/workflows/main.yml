@@ -49,7 +49,7 @@ jobs:
             echo "cp ../strapi-env/.env ."
             cp ../strapi-env/.env .
             echo"npm install"
-            npm run install
+            npm install
             echo "npm run build"
             npm run build
             echo "SCRIPT_AFTER"
