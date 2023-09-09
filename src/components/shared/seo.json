@@ -2,7 +2,7 @@
   "collectionName": "components_shared_seos",
   "info": {
     "displayName": "seo",
-    "description": ""
+    "icon": "search"
   },
   "options": {},
   "attributes": {
@@ -20,12 +20,17 @@
     "metaImage": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
       ]
+    },
+    "metaSocial": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.meta-social"
     },
     "keywords": {
       "type": "text",
@@ -43,14 +48,6 @@
     },
     "canonicalURL": {
       "type": "string"
-    },
-    "image": {
-      "type": "string"
-    },
-    "metaSocial": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.meta-social"
     }
   }
 }
