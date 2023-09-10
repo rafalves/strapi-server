@@ -29,12 +29,12 @@ jobs:
         uses: easingthemes/ssh-deploy@main
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          ARGS: "-rlgoDzvc --delete " # delete all files that aren't in the github source (.env will be deleted if this is -- delete is enabled)
+          ARGS: "-rlgoDzvc -i --delete " # delete all files that aren't in the github source, if the file is in EXCLUDED list, it won't be sent nor deleted from remote)
           SOURCE: "/"
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: "/home/rafael/strapi-server/"
-          EXCLUDE: ".env.example, .env, /node_modules/, /build"
+          EXCLUDE: ".env.example, .env, /node_modules/, /build /public"
           SCRIPT_BEFORE: |
             echo "SCRIPT_BEFORE"
             echo "🚀🚀🚀 STOP PM2 🚀🚀🚀"
@@ -46,17 +46,14 @@ jobs:
             echo "🚀🚀🚀 Starting SCRIPT AFTER 🚀🚀🚀"
             echo "cd strapi-server/"
             cd strapi-server/
-            echo "cp ../strapi-env/.env ."
-            cp ../strapi-env/.env .
             echo"npm install"
             npm install
             echo "npm run build"
             npm run build
-            echo "SCRIPT_AFTER"
             echo "🚀🚀🚀 Runnin PM2 - Strapi to the moon 🚀🚀🚀"
             echo "NODE_ENV=production pm2 start strapiloader.js -i max --env production"
             NODE_ENV=production pm2 start strapiloader.js -i max --env production
             echo "pm2 status"
             pm2 status
             echo $RSYNC_STDOUT
-            echo "🚀🚀🚀 END SCRIPT 🚀🚀🚀"
+            echo "✅✅✅ END SCRIPT ✅✅✅"
