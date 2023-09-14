@@ -38,7 +38,9 @@
         "blocks.next-article",
         "blocks.previous-article",
         "blocks.related-articles",
-        "blocks.faq"
+        "blocks.faq",
+        "blocks.products-related",
+        "blocks.products-similar"
       ]
     },
     "minsToRead": {

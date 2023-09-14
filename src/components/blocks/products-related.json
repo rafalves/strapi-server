@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blocks_products_relateds",
+  "info": {
+    "displayName": "productsRelated",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "productRelated": {
+      "type": "component",
+      "repeatable": true,
+      "component": "slices.prod-related"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

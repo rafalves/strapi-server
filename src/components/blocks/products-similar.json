@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_blocks_products_similars",
+  "info": {
+    "displayName": "ProductsSimilar"
+  },
+  "options": {},
+  "attributes": {
+    "order": {
+      "type": "integer"
+    },
+    "productsSimilar": {
+      "type": "component",
+      "repeatable": true,
+      "component": "slices.prod-similar"
+    }
+  }
+}

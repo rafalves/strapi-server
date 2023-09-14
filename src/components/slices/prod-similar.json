@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_slices_prod_similars",
+  "info": {
+    "displayName": "ProdSimilar"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
