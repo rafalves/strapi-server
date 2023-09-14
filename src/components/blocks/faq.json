@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_blocks_faqs",
+  "info": {
+    "displayName": "Faq"
+  },
+  "options": {},
+  "attributes": {
+    "Faq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "slices.qa"
+    }
+  }
+}

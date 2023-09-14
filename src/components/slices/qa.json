@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_slices_qas",
+  "info": {
+    "displayName": "QA"
+  },
+  "options": {},
+  "attributes": {
+    "order": {
+      "type": "integer"
+    },
+    "question": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "text"
+    }
+  }
+}
