@@ -37,7 +37,8 @@
         "blocks.content-ck-editor",
         "blocks.next-article",
         "blocks.previous-article",
-        "blocks.related-articles"
+        "blocks.related-articles",
+        "blocks.faq"
       ]
     },
     "minsToRead": {
