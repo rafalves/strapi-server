@@ -37,6 +37,9 @@
     "hierarchy": {
       "type": "string",
       "required": true
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }
