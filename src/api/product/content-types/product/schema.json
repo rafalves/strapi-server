@@ -15,40 +15,43 @@
     "name": {
       "type": "string"
     },
-    "images": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
+    "image": {
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "type": "media",
+      "multiple": false
     },
-    "rating": {
+    "price": {
       "type": "decimal",
-      "default": 5,
-      "max": 5,
-      "min": 1
+      "default": 0
     },
-    "shopButton": {
-      "type": "component",
-      "repeatable": true,
-      "component": "slices.shop-button"
+    "price_old": {
+      "type": "decimal"
     },
-    "imageUrl": {
+    "discount": {
+      "type": "integer"
+    },
+    "seller": {
       "type": "string"
     },
-    "description_blog": {
-      "type": "richtext"
+    "category": {
+      "type": "string"
     },
-    "description_ckeditor": {
-      "type": "customField",
-      "options": {
-        "preset": "toolbar"
-      },
-      "customField": "plugin::ckeditor5.CKEditor"
+    "date": {
+      "type": "datetime"
+    },
+    "date_time": {
+      "type": "string"
+    },
+    "likes": {
+      "type": "integer"
+    },
+    "tags": {
+      "type": "text"
     }
   }
 }

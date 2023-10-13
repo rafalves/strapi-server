@@ -4,7 +4,8 @@
   "info": {
     "singularName": "prod-teste",
     "pluralName": "prod-testes",
-    "displayName": "prod_teste"
+    "displayName": "prod_teste",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,16 @@
     },
     "url": {
       "type": "string"
+    },
+    "imagem": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
