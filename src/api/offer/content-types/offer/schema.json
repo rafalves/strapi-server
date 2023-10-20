@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "products",
+  "collectionName": "offers",
   "info": {
-    "singularName": "product",
-    "pluralName": "products",
-    "displayName": "Product",
-    "description": ""
+    "singularName": "offer",
+    "pluralName": "offers",
+    "displayName": "Offer"
   },
   "options": {
     "draftAndPublish": true
@@ -15,25 +14,17 @@
     "name": {
       "type": "string"
     },
-    "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
     "price": {
-      "type": "decimal",
-      "default": 0
+      "type": "decimal"
     },
-    "price_old": {
+    "old_price": {
       "type": "decimal"
     },
     "discount": {
       "type": "integer"
+    },
+    "payment_method": {
+      "type": "string"
     },
     "seller": {
       "type": "string"
@@ -41,17 +32,20 @@
     "category": {
       "type": "string"
     },
-    "date": {
-      "type": "datetime"
+    "post_hour": {
+      "type": "string"
     },
-    "date_time": {
+    "headline": {
       "type": "string"
     },
     "likes": {
       "type": "integer"
     },
     "tags": {
-      "type": "text"
+      "type": "string"
+    },
+    "offer_source": {
+      "type": "string"
     }
   }
 }
