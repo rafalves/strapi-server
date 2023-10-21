@@ -4,7 +4,8 @@
   "info": {
     "singularName": "offer",
     "pluralName": "offers",
-    "displayName": "Offer"
+    "displayName": "Offer",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -32,9 +33,6 @@
     "category": {
       "type": "string"
     },
-    "post_hour": {
-      "type": "string"
-    },
     "headline": {
       "type": "string"
     },
@@ -46,6 +44,16 @@
     },
     "offer_source": {
       "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
