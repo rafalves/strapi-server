@@ -58,6 +58,10 @@
     },
     "prod_link": {
       "type": "string"
+    },
+    "post_update": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
