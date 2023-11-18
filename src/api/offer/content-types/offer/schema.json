@@ -62,6 +62,9 @@
     "post_update": {
       "type": "boolean",
       "default": false
+    },
+    "twitterPost": {
+      "type": "richtext"
     }
   }
 }
