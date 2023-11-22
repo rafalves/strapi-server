@@ -65,6 +65,14 @@
     },
     "twitterPost": {
       "type": "text"
+    },
+    "postOnTwitter": {
+      "type": "boolean",
+      "default": false
+    },
+    "postOnTelegram": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
