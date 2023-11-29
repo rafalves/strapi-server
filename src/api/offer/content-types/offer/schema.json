@@ -73,6 +73,10 @@
     "postOnTelegram": {
       "type": "boolean",
       "default": false
+    },
+    "bestOffer": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
